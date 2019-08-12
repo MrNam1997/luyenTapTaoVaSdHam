@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function findStar(arr1, arr2) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (enterStar == arr1[i]){
+                alert(enterStar + " thuộc chòm sao " + arr2[i]);
+                break;
+            } else {
+                alert(enterStar+ " không thuộc chòm sao nào hoặc bạn nhập không đúng! ");
+                break;
+            }
+        }
+
+    }
+
+    let enterStar = prompt("enter find Star:")
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"];
+    findStar(arr1, arr2);
+</script>
+
+</body>
+</html>
